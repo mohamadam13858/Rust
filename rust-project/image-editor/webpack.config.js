@@ -14,5 +14,8 @@ module.exports = {
         new WasmPackPlugin({
             crateDirectory: path.resolve(__dirname, '.')
         })
-    ]
+    ],
+    experiments: {
+        asyncWebAssembly: true
+    }
 };
